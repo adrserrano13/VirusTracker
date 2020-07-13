@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_sintomas">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_"
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="32dp"
+                android:textSize="18dp"
+                android:inputType="textMultiLine"
+                android:text="
+La COVID-19 afecta de distintas maneras en función de cada persona. La mayoría de las personas que se contagian presentan síntomas de de intensidad leve o moderada, y se recuperan sin necesidad de hospitalización.\n\n
+Los síntomas más habituales son los siguientes: \n
+    * Fiebre \n
+    * Tos seca \n
+    * Cansancio \n\n
+Otros síntomas menos comunes son los siguientes: \n
+    * Molestias y dolores\n
+    * Dolor de garganta\n
+    * Diarrea\n
+    * Conjuntivitis\n
+    * Dolor de cabeza\n
+    * Pérdida del sentido del olfato \n
+       o del gusto\n
+    * Erupciones cutáneas o pérdida del \n
+        color en los dedos de las manos \n
+        o de los pies\n\n
+Los síntomas graves son los siguientes:\n
+    * Dificultad para respirar o sensación\n
+       de falta de aire\n
+    * Dolor o presión en el pecho\n
+    * Incapacidad para hablar o moverse\n\n
+Si presentas síntomas graves, busca atención médica inmediata. Sin embargo, siempre debes llamar a tu doctor o centro de atención sanitaria antes de presentarte en el lugar en cuestión.
+Lo recomendable es que las personas que sufran síntomas leves y tengan un buen estado de salud general se confinen en casa.
+De media, las personas que se contagian empiezan a presentar síntomas en un plazo de 5 a 6 días desde que se infectan, pero pueden tardar hasta 14.\n"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

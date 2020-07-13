@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_consejos_higiene">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView_titulo_higienePersonal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="35dp"
+                android:text="@string/higiene_personal"
+                android:textColor="#151515"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_info_higienePersonal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:inputType="textMultiLine"
+                android:text="
+            * No te toques la cara\n
+            * No tosas ni estornudes cubriéndote con las manos \n
+            * Mantén la distancia (2 metros) \n
+            * Lávate las manos \n
+            * Utiliza guantes y mascarillas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_titulo_higienePersonal" />
+
+            <TextView
+                android:id="@+id/textView_titulo_limpiezaHogar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="16dp"
+                android:text="Limpieza del hogar:"
+                android:textColor="#151515"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_info_higienePersonal" />
+
+            <TextView
+                android:id="@+id/textView_info_limpiezaHogar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:inputType="textMultiLine"
+                android:text="
+            * Limpiar y desinfectar las superficies que se \n
+               tocan con frecuencia\n
+            * Limpiarla con jabón o con detergente y agua. A \n
+               continuación se debe usar un producto \n
+               desinfectante que contenga alcohol \n
+               (aproximadamente un 70%) o lejía"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_titulo_limpiezaHogar" />
+
+            <TextView
+                android:id="@+id/textView_titulo_lavadoRopa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="16dp"
+                android:text="Lavado de la ropa:"
+                android:textColor="#151515"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_info_limpiezaHogar" />
+
+            <TextView
+                android:id="@+id/textView_info_lavadoRopa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:inputType="textMultiLine"
+                android:text="
+            * Lava las sábanas, las toallas y la ropa con \n
+               regularidad.\n
+                    - Para minimizar la posibilidad de que el virus se \n
+                      disperse por el aire, no sacudas la ropa sucia. \n
+                    - Lava la ropa con jabón o detergente y con agua \n
+                      lo más caliente posible. Seca la ropa \n
+                      completamente. Tanto el lavado como el secado \n
+                      ayudan a matar el virus.\n
+                    - Lávate de inmediato las manos con jabón y agua, \n
+                      o usa un desinfectante para las manos a base de \n
+                      alcohol.\n
+                    - Lava o desinfecta la bolsa o el cesto de la ropa \n
+                      sucia. Considera la posibilidad de guardar la ropa \n
+                      sucia en bolsas desechables"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_titulo_lavadoRopa" />
+
+            <TextView
+                android:id="@+id/textView_titulo_manipulacionAlimentos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="16dp"
+                android:text="Manipulación de los alimentos:"
+                android:textColor="#151515"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_info_lavadoRopa" />
+
+            <TextView
+                android:id="@+id/textView_info_manipulacionAlimentos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:inputType="textMultiLine"
+                android:text="
+            * Precauciones con los envases y la manipulación de \n
+               los alimentos \n
+                    - Retira todos los envases innecesarios y \n
+                      deséchalos en un cubo de basura que tenga \n
+                      tapa.\n
+                    - Saca de los envases los alimentos que has \n
+                      encargado y colócalos en un plato limpio; \n
+                      luego, desecha los envases.\n
+                    - Limpia los productos enlatados con un \n
+                      desinfectante antes de abrirlos o guardarlos.\n
+                    - Lava a fondo y con agua corriente los productos \n
+                      no envasados, como las frutas y las verduras.\n
+                    - Lávate las manos inmediatamente después con \n
+                      jabón y agua, o utiliza un desinfectante para \n
+                      las manos a base de alcohol.\n\n
+            * Consejos generales sobre higiene alimentaria\n
+                    - Lavarse muy bien las manos con jabón y agua \n
+                      durante al menos 20 segundos antes de \n
+                      preparar los alimentos.\n
+                    - Utilizar tablas de cortar separadas para \n
+                      preparar carne y pescado crudos.\n
+                    - Cocinar los alimentos a la temperatura \n
+                      recomendada.\n
+                    - En lo posible, mantener los productos \n
+                      perecederos refrigerados o congelados y prestar \n
+                      atención a las fechas de vencimiento.\n
+                    - Eliminar los restos de comida de una manera \n
+                      higiénica y reciclar los envases apropiadamente, \n
+                      a fin de evitar la acumulación de desechos que \n
+                      puedan atraer pestes.\n
+                    - Lavarse las manos con jabón y agua durante al \n
+                      menos 20 segundos antes de comer, \n
+                      y asegurarse de que los niños\n
+                      también lo hagan.\n
+                    - Utilizar siempre utensilios y platos limpios.\n"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_titulo_manipulacionAlimentos" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

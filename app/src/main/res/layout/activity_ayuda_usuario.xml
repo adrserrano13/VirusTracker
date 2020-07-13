@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_ayuda_usuario">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="36dp"
+                android:inputType="textMultiLine"
+                android:text="
+Esta aplicación tiene como idea principal la ayuda a
+combatir el coronavirus, para ello utilizamos el móvil
+como herramienta para rastrear los contactos sociales
+buscando puntos de posibles infecciones y se avisa a
+los posibles infectados.\n\n
+Hay 3 estados:\n
+    * VERDE (no existe contacto registrado con ningún \n
+       infectado)\n
+    * AMARILLO (ha habido contacto anterior con \n
+       algún infectado, por lo cual existe un riesgo de haber\n
+       sido contagiado)\n
+    * ROJO (el usuario es un contagio confirmado).\n
+El usuario podrá volver a verde desde el estado ROJO \n
+a traves de los ajustes una vez haya pasado la enfermedad.\n\n
+Para que la APP pueda encontar redes WIFI debes activar\n
+los permisos de Localización.\n
+Las redes wifi guardadas por el ususario harán que la \n
+aplicación deje de buscar dispositivos cercanos, ya que,\n
+tomará estos lugares como lugares seguros.\n
+
+"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

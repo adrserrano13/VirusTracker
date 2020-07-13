@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_informacion">
+
+    <ImageButton
+        android:id="@+id/imageButton_OMS"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="75dp"
+        android:background="#FFFFFF"
+        android:onClick="irAWeb"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/oms" />
+
+    <ImageButton
+        android:id="@+id/imageButton_ElPais"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:background="#151515"
+        android:onClick="irAWeb"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_OMS"
+        app:srcCompat="@drawable/elpais" />
+
+    <ImageButton
+        android:id="@+id/imageButton_ElMundo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="56dp"
+        android:background="#151414"
+        android:onClick="irAWeb"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_Sanidad"
+        app:srcCompat="@drawable/elmundo" />
+
+    <ImageButton
+        android:id="@+id/imageButton_ElEspanol"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="56dp"
+        android:background="#0B0A0A"
+        android:onClick="irAWeb"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_ElMundo"
+        app:srcCompat="@drawable/elespanol" />
+
+    <ImageButton
+        android:id="@+id/imageButton_ABC"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:background="#0B0A0A"
+        android:onClick="irAWeb"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_ElPais"
+        app:srcCompat="@drawable/abc" />
+
+    <ImageButton
+        android:id="@+id/imageButton_Sanidad"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="56dp"
+        android:background="#FFFFFF"
+        android:onClick="irAWeb"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sanidad" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
